@@ -734,9 +734,9 @@ describe ::API::V3::WorkPackages::Schema::WorkPackageSchemaRepresenter do
     end
   end
 
-  describe '#cache_key' do
+  describe '#json_cache_key' do
     def joined_cache_key
-      representer.cache_key.join('/')
+      representer.json_cache_key.join('/')
     end
 
     before do
